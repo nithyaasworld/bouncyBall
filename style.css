@@ -1,0 +1,42 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: black;
+}
+.ball{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+    background-color: white;
+    position: relative;
+    animation: moveAround 2s linear alternate infinite;
+}
+@keyframes moveAround {
+    0%{
+        left: 0%;
+        top: 10%;
+    }
+    10%{
+        top: 0%;
+        left: 10%;
+    }
+    50%{
+        left: 98%;
+        top: 90%;
+    }
+    55%{
+        left: 90%;
+        top: 97%;
+    }
+    100%{
+        left: 0%;
+        top: 10%;
+    }
+}
